@@ -1,0 +1,85 @@
+body { 
+    background-color: rgb(93, 17, 235);
+}
+
+section{
+    background-color: aqua;
+    border-radius: 50px;
+    text-align: center;
+}
+
+mark{ 
+    background-color: violet
+}
+
+pre{
+    background-color: white;
+    width: 350px;
+    border-radius: 30px;
+}
+
+/* class is referred to as "." + name in CSS */
+.poem{
+    background-color: yellow;
+    text-align: center;
+    border: 5px dashed rgb(248, 6, 6);
+    }
+
+    ul{
+        border: 10px dotted yellow;
+    }
+
+    /* "#" is for "id" elements  */
+    #WelcomeMessage{
+        background-color: brown;
+    }
+
+/* This is to show that if you have an id and a class together on the same line, "id" takes precedence because it's more specific */
+    #listSection{
+        color:rgb(241, 152, 19);
+    }
+   
+    .listSelectionClass{
+        color: yellowgreen;
+    }
+
+    /* if you have two classes on the same thing then the bottom one will show up (assuming we comment out the id above in this example) */
+    .listSelectionClass{
+        color:rgb(93, 17, 235);
+
+    }
+
+    /* Example of simple selector: combinators-- ex: paragraph that is adjacent/next to the section */
+    section + p{ 
+        color: blueviolet
+    }
+
+/* Example of simple selector: combinators "~" */
+    h2 ~ h3{
+        color: grey;
+    }
+
+a:hover{ 
+    color:hotpink;
+}
+p::first-line{
+    background-color: cornflowerblue;
+}
+
+p::first-letter{
+    background-color: olivedrab;
+
+}
+
+/* Table is automatically how wide your text is. the second part of table was tabbed in but we can fix that by adding width  */
+table{ 
+    width: 500px;
+    background-color: rgb(208, 205, 255);
+    border-radius: 5%;
+    border: 5px solid yellow; 
+}
+
+td{
+    border: 5px solid yellow;
+}
+

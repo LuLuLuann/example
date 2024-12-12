@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <!--example of how to link pages--> 
-   <a href="./pages/about.html">About page</a>
-   <a href="./pages/signin.html">Sign in page</a>
-   <a href="./pages/signup.html">Sign up page</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example HTML + CSS - not pretty</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--example of how to insert inline styling into your html-->
+    <!--If you style all sections - this is the order of which is actually displayed in the page -- inline with the element is first, then header, then external CSS -->
+    <style>
+        /* child relationship in -___ combinators- just targets the child --- matches the second only if it is a direct child of the element */
+        ul>li{
+            font-style:italic;
+        }
+ 
+    </style>
+  </head>
+  <body>
+    <!-- Here we are showing what an Header elements do -->
+    <!-- Example comment to other coders reading your code - This is to be ignored, This is incomplete -->
+    <section>
+    <!--id is for unique elements - should use each one only once. use # to reference id's in the css -->
+      <h1 id = "WelcomeMessage">Hello 2024_RTT_60</h1>
+      <h3>Testing ~ CSS properties</h3>
+      <h2><strong>Hello </strong>2024_RTT_60</h2>
+      <h3>Hello 2024_RTT_60</h3>
+      <h3>Duplicate h3 line</h3>
+      <h3>Testing ~ css properties</h3>
+      <h4>Hello 2024_RTT_60</h4>
+      <p><strong>Hello </strong>2024_RTT_60</p>
+    </section>
+
+
+
+    <!-- Here Is an example of paragraph elements and the line break -->
+    <hr>
+    <!-- class is for grouped elements and referred to as "." + name in CSS  -->
+   <section class="poem">
+    <h1>She Walks in Beauty</h1>
+<br>
+        <h3>By Lord Byron (George Gordon) </h3>
+    <!-- Here is the example of the not very commonly used <pre> element -->
+    <pre>
+        "She walks in <mark>beauty</mark>, like the night
+        Of <mark>cloudless</mark> climes and <mark>starry</mark> skies;
+        And all that’s <mark>best</mark> of dark and <mark>bright</mark>
+        Meet in her aspect and her eyes;
+        Thus <mark>mellowed</mark> to that <mark>tender</mark> light
+        Which heaven to gaudy day denies.
+        
+        One shade the more, one ray the less,
+        Had half impaired the nameless <mark>grace</mark>
+        Which waves in every raven tress,
+        Or softly lightens o’er her face;
+        Where thoughts <mark>serenely sweet</mark> express,
+        How <mark>pure</mark>, how <mark>dear</mark> their dwelling-place.
+        
+        And on that cheek, and o’er that brow,
+        So <mark>soft</mark>, so <mark>calm</mark>, yet <mark>eloquent</mark>,
+        The smiles that <mark>win</mark>, the tints that <mark>glow</mark>,
+        But tell of days in <mark>goodness</mark> spent,
+        A mind at <mark>peace</mark> with all below,
+        A heart whose love is <mark>innocent</mark>!"
+    </pre>
+</section>
+    <hr>
+    <!-- Here is the example of different font alterations you can use -->
+    <section><p>
+      <b>This text is bold.</b><br />
+      <i>This text is italic.</i><br />
+      <strong>This text is important!</strong><br />
+      <em>This text is emphasized.</em><br />
+      This text is <mark>highlighted</mark>.<br />
+      <small>This text is small.</small><br />
+      <del>This text is deleted.</del><br />
+      <ins>This text is inserted.</ins><br />
+      This text is <sup>superscripted</sup>.<br />
+      This text is <sub>subscripted</sub>.<br />
+    </p>
+</section>
+
+<!-- We are creating a list example below -->
+<!-- This is to show that if you have an "id" and a "class" together on the same line, "id" takes precedence because it's more specific  -->
+    <section id ="listSection" class="listSelectionClass">
+        <ul><b>Favorites:</b>
+            <li>horchata</li>
+            <li>kelewele</li>
+            <li>Afro Pop</li>
+            <li>Rescue Rangers</li>
+        </ul>
+        <ol><b>Top 3 Cuisines:</b>
+            <li>Indian</li>
+            <li>Mexican</li>
+            <li>Thai</li>
+        </ol>
+    </section>
+    <!-- Here is an image example from the interwebs-->
+     <img src="https://colormadehappy.com/wp-content/uploads/2022/11/Snowman-Drawing-5-1-1024x1024.jpg.webp" alt="snowman" width="300px">
+     <!-- This is how we reference a pic on our computer in the files -->
+     <img src="./pages/trees.jpg" alt="wooden trees pic" width="300px">
+
+     <!-- We're going to make an anchor tag! Yippee! -->
+      <br>
+      <a href="https://www.google.com">Go to Google</a>
+      <a href="https://www.yahoo.com">Go to Yahoo</a>
+      <a href="https://www.slack.com">Go to Slack</a>
+  </body>
+
+  <!-- Creating a table: table <table>, table row <tr>, table header <th>, table data <td> -->
+   <table>
+    <caption>full list of most and least favorites</caption>
+    <tr>
+        <th>Fun list of favorite movies</th>
+    </tr>
+    <tr>
+        <td>Singin' in the Rain</td>
+    </tr>
+    <tr>
+        <td>But I'm a Cheerleader</td>
+    </tr>
+    <tr>
+        <td>Thoda Pyaar Thoda Magic</td>
+    </tr>
+    <tr>
+        <th>Fun list of least favorite movies</th>
+    </tr>
+    <tr>
+        <td>Deadpool & Wolverine</td>
+    </tr>
+    <tr>
+        <td>Hocus Pocus</td>
+    </tr>
+    <tr>
+        <td>Little Bee (I've never seen it but 1.2 stars on imdb is pretty bad)</td>
+    </tr>
+<tfoot>Thank you for coming.</tfoot>
+   </table>
 </html>
+<!-- Here is an example of how our browser will try to overthink for us and this is included inside the html -->
+<h1>Hello World</h1>
